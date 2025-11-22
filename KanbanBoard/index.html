@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Fun Zone - Kanban ploča</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- IPI logo u gornjem lijevom uglu -->
+    <img id="ipi-logo" src="ipi-logo.png" alt="IPI Akademija">
+
+    <h1>Student Fun Zone - Kanban ploča</h1>
+
+    <div class="buttons">
+        <button id="addTaskBtn">Dodaj zadatak</button>
+        <button id="saveBoardBtn">Snimi</button>
+        <button id="clearBoardBtn">Ocisti plocu</button>
+    </div>
+
+    <!-- Modal za dodavanje zadatka -->
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <h3>Dodaj zadatak</h3>
+            <input type="text" id="taskInput" placeholder="Vas zadatak...">
+            <div class="modal-buttons">
+                <button id="modalAddBtn">Dodaj</button>
+                <button id="modalCancelBtn">Ponisti</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal za ciscenje ploce -->
+    <div id="clearModal" class="modal">
+        <div class="modal-content">
+            <h3>Ocisti cijelu plocu?</h3>
+            <p>Ova radnja se ne moze ponistiti.</p>
+            <div class="modal-buttons">
+                <button id="clearYesBtn" style="background:#e74c3c;">Ocisti</button>
+                <button id="clearNoBtn">Ponisti</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kanban ploca -->
+    <div class="board">
+        <div class="column" data-status="todo">
+            <h2>To Do</h2>
+            <div class="taskList" id="todoList"></div>
+        </div>
+
+        <div class="column" data-status="progress">
+            <h2>In Progress</h2>
+            <div class="taskList" id="progressList"></div>
+        </div>
+
+        <div class="column" data-status="done">
+            <h2>Done</h2>
+            <div class="taskList" id="doneList"></div>
+        </div>
+    </div>
+
+    <footer>
+        Web programiranje 2025 © Internacionalna poslovno informaciona akademija Tuzla
+    </footer>
+
+    <!-- html2canvas za snimanje ploce kao PNG -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>

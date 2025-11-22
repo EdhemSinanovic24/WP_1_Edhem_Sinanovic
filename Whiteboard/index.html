@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Interaktivni Whiteboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="logo-container">
+    <img src="ipi-logo.png" alt="IPI Logo" class="ipi-logo">
+</div>
+
+<h1>Interaktivni Whiteboard</h1>
+
+<div class="toolbar">
+    <label>Boja:</label>
+    <input type="color" id="colorPicker" value="#000000">
+
+    <label>Velicina:</label>
+    <input type="range" id="brushSize" min="1" max="40" value="5">
+
+    <button id="drawMode">Crtaj</button>
+    <button id="erase">Brisi</button>
+    <button id="clear">Ocisti</button>
+    <button id="savePng">Snimi PNG</button>
+    <button id="savePdf">Snimi kao PDF</button>
+    <button id="openMailPopup">Posalji mailom</button>
+</div>
+
+<canvas id="canvas" width="900" height="500"></canvas>
+
+<div id="mailPopup" class="popup">
+    <div class="popup-inner">
+        <h2>Posalji whiteboard mailom</h2>
+        <label>Email adresa:</label>
+        <input type="email" id="mailAddress" placeholder="unesi email">
+        <div class="popup-buttons">
+            <button id="sendMail">Posalji</button>
+            <button id="cancelMail">Ponisti</button>
+        </div>
+    </div>
+</div>
+
+<script src="javascript.js"></script>
+</body>
+</html>

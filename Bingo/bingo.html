@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo – Student Fun Zone</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="bingo.css">
+
+    <!-- jsPDF za PDF eksport pripravljeno -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>BINGO</h1>
+        <p>Dobrodošli u student fun zonu – zaigraj i zabavi se!</p>
+    </header>
+
+    <main>
+
+        <!-- Bingo tabla – centrirana -->
+        <section class="board-container">
+            <table id="bingoBoard"></table>
+        </section>
+
+        <!-- Dugmad -->
+        <div class="btn-group">
+            <button id="newBoardBtn" class="main-btn">Generiši novu tablu</button>
+            <button id="downloadPdfBtn" class="main-btn">Preuzmi PDF</button>
+            <button id="sendEmailBtn" class="main-btn">Pošalji mailom</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Student Fun Zone – IPI Akademija</p>
+    </footer>
+
+
+    <!-- ===================== POPUP ZA EMAIL ===================== -->
+    <div id="emailPopup" class="popup">
+        <div class="popup-content">
+            <h2>Pošalji Bingo tablicu</h2>
+
+            <input type="email" id="emailInput" placeholder="Unesite vaš email..." required>
+
+            <div class="popup-buttons">
+                <button id="confirmSendBtn" class="main-btn">Pošalji</button>
+                <button id="cancelPopupBtn" class="main-btn">Poništi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== WIN MESSAGE ===================== -->
+    <div id="winMessage" class="win-message">
+        🎉 BINGO! POBIJEDIO/LA SI! 🎉
+    </div>
+
+    <!-- JS -->
+    <script src="bingo.js"></script>
+
+</body>
+</html>

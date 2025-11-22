@@ -1,1 +1,75 @@
-# WP_1_Edhem_Sinanovic
+IPI Akademija – Web Projekat
+
+Autor: Edhem Sinanović
+
+Ovaj projekat predstavlja kompletan rad rađen tokom semestra za predmet Web Programiranje na IPI Akademiji.
+Sadržaj uključuje glavne HTML stranice, stilove, te više mini-aplikacija koje rade potpuno offline.
+
+1. Opis projekta
+
+Cijeli projekat se pokreće lokalno, direktnim otvaranjem datoteke index.html u internet pregledniku.
+Stranice su povezane navigacijom, a mini-aplikacije (bingo, kviz, kanban board itd.) nalaze se u zasebnim folderima zbog preglednosti.
+
+2. Struktura projekta
+
+Glavne HTML stranice:
+
+index.html – početna stranica
+
+kontakt.html – kontakt forma
+
+popis.html – informacije / sadržaj
+
+raspored.html – raspored kurseva
+
+studentfunzone.html – ulaz u mini-aplikacije
+
+favicon.ico
+
+Folderi:
+
+/css – stilovi stranica
+
+/slike – slike i ikonice
+
+/mail – elementi vezani za kontakt formu
+
+/bingo – bingo aplikacija
+
+/kviz – jednostavni kviz
+
+/kanbanboard – kanban tabla
+
+/visionboard – vision board alat
+
+/whiteboard – tabla za crtanje
+
+3. Kratak opis funkcionalnosti
+
+Bingo – generisanje bingo tablice
+
+Kviz – kratki interaktivni kviz
+
+Kanban Board – organizacija zadataka po kolonama
+
+Vision Board – alat za postavljanje ciljeva i slika
+
+Whiteboard – jednostavna tabla za crtanje
+
+Sve aplikacije rade offline bez instalacija
+
+4. Tehnologije korištene
+
+HTML5
+
+CSS3
+
+JavaScript
+
+5. Kako pokrenuti projekat
+
+Preuzeti projektni folder, extractovati ga.
+
+Otvoriti datoteku index u bilo kojem browseru (Chrome,Edge).
+
+Navigacija i mini-aplikacije dostupne su kroz meni.

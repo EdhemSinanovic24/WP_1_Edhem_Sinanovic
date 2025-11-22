@@ -4,6 +4,7 @@ Autor: Edhem Sinanović
 
 Ovaj projekat predstavlja kompletan rad rađen tokom semestra za predmet Web Programiranje na IPI Akademiji.
 Sadržaj uključuje glavne HTML stranice, stilove, te više mini-aplikacija koje rade potpuno offline.
+Projekat je radjen u Visual Studio Code programu.
 
 1. Opis projekta
 

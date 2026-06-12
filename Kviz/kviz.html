@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fun Zone | IT Kviz</title>
+    <link rel="stylesheet" href="kviz-style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <header>
+            <h1>🧠 Studentski IT Kviz</h1>
+            <p>Provjeri koliko znaš o programiranju - 5 pitanja, brzo i jasno!</p>
+        </header>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="quiz-box" id="quizBox">
+            <div class="question-header">
+                <span id="questionNumber">Pitanje 1 od 5</span>
+            </div>
+            <h2 id="questionText">Učitavanje pitanja...</h2>
+
+            <div class="options-container" id="optionsContainer"></div>
+
+            <div class="quiz-footer">
+                <button id="nextBtn" class="btn" disabled>Sljedeće pitanje ➔</button>
+            </div>
+        </div>
+
+        <div class="result-box" id="resultBox" style="display: none;">
+            <h2>📊 Rezultat Kviza</h2>
+            <div class="score-circle">
+                <span id="scorePercent">0%</span>
+            </div>
+            <p id="resultText">Odgovorili ste tačno na 0 od 5 pitanja.</p>
+            <button id="restartBtn" class="btn">Pokreni ponovo ↻</button>
+        </div>
+    </div>
+
+    <script src="kviz-script.js"></script>
+</body>
+</html>

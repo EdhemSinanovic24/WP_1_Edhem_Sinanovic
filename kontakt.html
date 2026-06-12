@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt - IPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP PLAVA TRAKA SA LOGOM -->
+    <header class="top-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="slike/logo-ipi.png" alt="Kursevi IPI">
+            </a>
+        </div>
+    </header>
+
+    <div class="layout-body">
+
+    <div class="sidebar">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">O kursevima</a></li>
+                <li><a href="popis.html">Popis kurseva</a></li>
+                <li><a href="raspored.html">Raspored kurseva</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Student Fun Zone ▾</a>
+                    <div class="dropdown-content">
+                        <a href="whiteboard/whiteboard.html" target="sadrzaj-okvir">Interaktivni Whiteboard</a>
+                        <a href="visionboard/visualboard.html" target="sadrzaj-okvir">Visual Board</a>
+                        <a href="kanban/kanban.html" target="sadrzaj-okvir">Kanban Board</a>
+                        <a href="Bingo/bingo.html" target="sadrzaj-okvir">Bingo</a>
+                        <a href="Kviz/kviz.html" target="sadrzaj-okvir">Kviz</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-wrapper">
+        <main class="main-content" id="main-zona">
+            <iframe name="sadrzaj-okvir" id="sadrzajOkvir" src="about:blank" style="display:none;"></iframe>
+
+            <div id="pocetniSadrzaj">
+                <h2>Kontakt</h2>
+
+                <div class="main-image">
+                    <img src="slike/srce.jpg" alt="Srce">
+                </div>
+
+                <p style="font-size: 15px; color: #1a3a7c; font-style: italic; border-bottom: 1px solid #d0d8ee; padding-bottom: 12px; margin-bottom: 20px;">💡 Do IPI-ja se može doći javnim gradskim prevozom ili taksijem.</p>
+
+                <div style="background-color: #f8fafc; padding: 20px; border-radius: 6px; border-left: 4px solid #1a3a7c; margin-top: 20px;">
+                    <p style="margin: 0 0 10px 0; font-weight: bold;">Naša adresa je:</p>
+                    <p style="margin: 0; line-height: 1.5;">
+                        Sveučilišni računski centar<br>
+                        Kulina bana br. 2 (Skver)<br>
+                        Tuzla, 75000<br>
+                        Bosna i Hercegovina<br>
+                        <strong>E-mail:</strong> <a href="mailto:info@ipi-akademija.ba">info@ipi-akademija.ba</a>
+                    </p>
+                </div>
+
+                <!-- KONTAKT FORMA -->
+                <div style="margin-top: 32px; background-color: #f8fafc; border: 1px solid #c4cde0; border-radius: 8px; padding: 28px 32px;">
+                    <h3 style="color: #1a3a7c; font-size: 18px; font-weight: 700; margin-bottom: 22px;">Pošaljite nam poruku</h3>
+
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-size: 14px; font-weight: 600; color: #333; margin-bottom: 6px;">Vaše ime i prezime</label>
+                        <input type="text" placeholder="Unesite Ime i Prezime" style="width: 100%; padding: 10px 14px; border: 1px solid #c4cde0; border-radius: 6px; font-size: 14px; color: #555; outline: none; font-family: inherit;">
+                    </div>
+
+                    <div style="margin-bottom: 16px;">
+                        <label style="display: block; font-size: 14px; font-weight: 600; color: #333; margin-bottom: 6px;">Vaša e-mail adresa</label>
+                        <input type="email" placeholder="Unesite vašu email adresu" style="width: 100%; padding: 10px 14px; border: 1px solid #c4cde0; border-radius: 6px; font-size: 14px; color: #555; outline: none; font-family: inherit;">
+                    </div>
+
+                    <div style="margin-bottom: 22px;">
+                        <label style="display: block; font-size: 14px; font-weight: 600; color: #333; margin-bottom: 6px;">Poruka</label>
+                        <textarea placeholder="Upišite vašu poruku ovdje..." rows="5" style="width: 100%; padding: 10px 14px; border: 1px solid #c4cde0; border-radius: 6px; font-size: 14px; color: #555; outline: none; font-family: inherit; resize: vertical;"></textarea>
+                    </div>
+
+                    <button type="button" style="background-color: #1a3a7c; color: #ffffff; border: none; padding: 11px 24px; border-radius: 6px; font-size: 14px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; font-family: inherit; transition: background 0.15s;">
+                        ✉ Pošalji poruku
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <p>&copy; Internacionalna poslovno-informaciona akademija Tuzla</p>
+        </footer>
+    </div>
+
+    </div> <!-- /.layout-body -->
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -51,4 +51,4 @@ Funkcionalnosti
 - Kviz sa trenutnim rezultatima
 
 Pokretanje projekta
-Projekt ne zahtijeva server - dovoljno je otvoriti index.html u browseru.
+ne zahtijeva server - dovoljno je otvoriti index.html u browseru.

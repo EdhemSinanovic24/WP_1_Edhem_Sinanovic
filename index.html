@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kursevi IPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP PLAVA TRAKA SA LOGOM -->
+    <header class="top-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="slike/logo-ipi.png" alt="Kursevi IPI">
+            </a>
+        </div>
+    </header>
+
+    <div class="layout-body">
+
+    <div class="sidebar">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">O kursevima</a></li>
+                <li><a href="popis.html">Popis kurseva</a></li>
+                <li><a href="raspored.html">Raspored kurseva</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Student Fun Zone ▾</a>
+                    <div class="dropdown-content">
+                        <a href="whiteboard/whiteboard.html" target="sadrzaj-okvir">Interaktivni Whiteboard</a>
+                        <a href="visionboard/visualboard.html" target="sadrzaj-okvir">Visual Board</a>
+                        <a href="kanban/kanban.html" target="sadrzaj-okvir">Kanban Board</a>
+                        <a href="Bingo/bingo.html" target="sadrzaj-okvir">Bingo</a>
+                        <a href="Kviz/kviz.html" target="sadrzaj-okvir">Kviz</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-wrapper">
+        <main class="main-content" id="main-zona">
+
+            <iframe name="sadrzaj-okvir" id="sadrzajOkvir" src="about:blank" style="display:none;"></iframe>
+
+            <div id="pocetniSadrzaj">
+                <h2>O kursevima</h2>
+
+                <div class="main-image">
+                    <img src="slike/tecajevi1.png" alt="Kursevi IPI">
+                </div>
+
+                <p class="lead-text"><a href="http://ipi-akademija.ba/" target="_blank">IPI akademija</a> više od pet godina održava stručne kurseve iz područja ICT-a. <strong>Kursevi IPI</strong> namijenjeni su svima zainteresiranima za stjecanje osnovnih znanja o upotrebi informacijsko-komunikacijskih tehnologija.</p>
+
+                <div class="section-block">
+                    <h3 class="section-label">Oblasti kurseva</h3>
+                    <ul class="styled-list">
+                        <li>Osnove upotrebe računara i <a href="http://hr.wikipedia.org/wiki/Internet" target="_blank">Interneta</a></li>
+                        <li><em>Web</em>-tehnologije, izrada <em>web</em>-stranica i <em>web</em>-sjedišta</li>
+                        <li>Informatička sigurnost</li>
+                        <li>Uvodni kursevi o <a href="http://www.linux.com" target="_blank">Linuxu</a> i drugi</li>
+                    </ul>
+                </div>
+
+                <div class="info-cards">
+                    <div class="info-card">
+                        <p>Kursevi se održavaju u moderno opremljenim, klimatiziranim učionicama veličine 50m<sup>2</sup>.</p>
+                    </div>
+                    <div class="info-card">
+                        <p>Članovi akademske zajednice ostvaruju posebne pogodnosti - znatno niže cijene ili <strong>besplatni kursevi</strong>. Popusti važe i za nezaposlene.</p>
+                    </div>
+                    <div class="info-card">
+                        <p>Objavljen je <a href="raspored.html">raspored kurseva</a> za tekući mjesec.</p>
+                    </div>
+                </div>
+
+                <div class="contact-bar">
+                    Za sva pitanja: <a href="mailto:info@ipi-akademija.ba">info@ipi-akademija.ba</a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <p>&copy; Internacionalna poslovno-informaciona akademija Tuzla</p>
+        </footer>
+    </div>
+
+    </div> <!-- /.layout-body -->
+
+    <script src="javascript.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fun Zone | Vision Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vb-style.css">
+</head>
+<body>
+
+    <div class="vb-wrapper">
+        <header class="vb-header">
+            <div class="title-zone">
+                <h1>📌 Studentski Vision Board</h1>
+            </div>
+
+            <div class="action-buttons">
+                <button id="addNoteBtn" class="btn btn-note">📝 Dodaj bilješku</button>
+                <button id="addImageBtn" class="btn btn-image">🖼️ Dodaj sliku</button>
+                <button id="addQuoteBtn" class="btn btn-quote">💬 Dodaj citat</button>
+                <button id="clearBoardBtn" class="btn btn-clear">🗑️ Očisti ploču</button>
+            </div>
+        </header>
+
+        <main class="vb-board" id="visionBoard"></main>
+    </div>
+
+    <div class="overlay" id="imageOverlay">
+        <div class="popup-box">
+            <h3>🖼️ Dodaj sliku na ploču</h3>
+            <p>Unesite ispravan URL (link) slike sa interneta.</p>
+            <div class="input-group">
+                <input type="url" id="imageUrlInput" placeholder="https://example.com/slika.jpg" required>
+            </div>
+            <div class="popup-buttons">
+                <button id="popupAddImgBtn" class="btn btn-image">Dodaj</button>
+                <button id="popupCancelImgBtn" class="btn btn-clear">Poništi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="vb-script.js"></script>
+</body>
+</html>

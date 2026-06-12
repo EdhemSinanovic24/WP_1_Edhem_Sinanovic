@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Bingo Kviz</title>
+    <link rel="stylesheet" href="bingo-style.css">
+</head>
+<body>
+
+    <div class="bingo-container">
+        <header>
+            <h1>🎮 IT Bingo Kviz</h1>
+        </header>
+
+        <div class="question-box" id="questionBox">
+            <h3>Pitanje za vas:</h3>
+            <p id="currentQuestion">Kliknite na dugme ispod da započnete kviz!</p>
+            <button id="startBtn" class="btn">🚀 Započni igru</button>
+        </div>
+
+        <div class="bingo-board" id="bingoBoard"></div>
+
+        <div class="stats-zone">
+            <div class="stat-card">
+                <span class="stat-label">Tačni odgovori:</span>
+                <span class="stat-value" id="scoreValue">0</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Preostalo pitanja:</span>
+                <span class="stat-value" id="remainingValue">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="overlay" id="winOverlay">
+        <div class="popup-box">
+            <h2>🎉 BINGO! 🎉</h2>
+            <p>Čestitamo! Uspješno ste povezali liniju od 5 tačnih IT pojmova!</p>
+            <button id="restartBtn" class="btn">Igraj ponovo</button>
+        </div>
+    </div>
+
+    <script src="bingo-script.js"></script>
+</body>
+</html>

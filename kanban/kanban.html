@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Fun Zone | Kanban Board</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="kb-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="kanban-wrapper">
+        <header class="kanban-header">
+            <div class="title-zone">
+                <h1>📋 Mini Kanban Ploča</h1>
+            </div>
+
+            <div class="action-buttons">
+                <button id="addTaskBtn" class="btn btn-add">+ Dodaj zadatak</button>
+                <button id="savePngBtn" class="btn btn-png">💾 Snimi kao PNG</button>
+                <button id="savePdfBtn" class="btn btn-pdf">📄 Snimi kao PDF</button>
+                <button id="sendEmailBtn" class="btn btn-mail">✉️ Pošalji mailom</button>
+                <button id="clearBoardBtn" class="btn btn-clear">🗑️ Očisti ploču</button>
+            </div>
+        </header>
+
+        <main class="kanban-board" id="kanbanBoard">
+            <div class="kanban-column" id="todo">
+                <div class="column-header color-todo">
+                    <h3>To Do</h3>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+            </div>
+
+            <div class="kanban-column" id="inprogress">
+                <div class="column-header color-progress">
+                    <h3>In Progress</h3>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+            </div>
+
+            <div class="kanban-column" id="done">
+                <div class="column-header color-done">
+                    <h3>Done</h3>
+                    <span class="task-count">0</span>
+                </div>
+                <div class="column-tasks" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+            </div>
+        </main>
+    </div>
+
+    <div class="overlay" id="emailOverlay">
+        <div class="popup-box">
+            <h3>✉️ Pošalji Kanban izvještaj</h3>
+            <p>Unesite e-mail adresu na koju želite poslati trenutno stanje sa ploče.</p>
+            <div class="input-group">
+                <label for="targetEmail">E-mail adresa primatelja:</label>
+                <input type="email" id="targetEmail" placeholder="ime.prezime@student.ipi.ba" required>
+            </div>
+            <div class="popup-buttons">
+                <button id="popupSendBtn" class="btn btn-add">Pošalji</button>
+                <button id="popupCancelBtn" class="btn btn-clear">Poništi</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="kb-script.js"></script>
+</body>
+</html>

@@ -10,6 +10,8 @@ Tehnologije
 - JavaScript (Vanilla)
 
 Struktura projekta
+
+```
 WP_1_Edhem_Sinanovic/
 ├── index.html              - Početna stranica
 ├── style.css               - Globalni stilovi
@@ -23,6 +25,7 @@ WP_1_Edhem_Sinanovic/
 ├── kanban/                 - Mini Kanban Ploča
 ├── Bingo/                  - IT Bingo Kviz
 └── Kviz/                   - Studentski IT Kviz
+```
 
 Stranice
 - O kursevima - Početna stranica sa opisom IPI Akademije

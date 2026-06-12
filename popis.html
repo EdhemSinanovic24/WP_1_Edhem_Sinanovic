@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popis kurseva - IPI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- TOP PLAVA TRAKA SA LOGOM -->
+    <header class="top-header">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="slike/logo-ipi.png" alt="Kursevi IPI">
+            </a>
+        </div>
+    </header>
+
+    <div class="layout-body">
+
+    <div class="sidebar">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html">O kursevima</a></li>
+                <li><a href="popis.html" class="active">Popis kurseva</a></li>
+                <li><a href="raspored.html">Raspored kurseva</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Student Fun Zone ▾</a>
+                    <div class="dropdown-content">
+                        <a href="whiteboard/whiteboard.html" target="sadrzaj-okvir">Interaktivni Whiteboard</a>
+                        <a href="visionboard/visualboard.html" target="sadrzaj-okvir">Visual Board</a>
+                        <a href="kanban/kanban.html" target="sadrzaj-okvir">Kanban Board</a>
+                        <a href="Bingo/bingo.html" target="sadrzaj-okvir">Bingo</a>
+                        <a href="Kviz/kviz.html" target="sadrzaj-okvir">Kviz</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="page-wrapper">
+        <main class="main-content" id="main-zona">
+            <iframe name="sadrzaj-okvir" id="sadrzajOkvir" src="about:blank" style="display:none;"></iframe>
+
+            <div id="pocetniSadrzaj">
+                <h2>Popis dostupnih kurseva</h2>
+
+                <p style="font-size: 15px; color: #1a3a7c; font-style: italic; border-bottom: 1px solid #d0d8ee; padding-bottom: 12px; margin-bottom: 20px;">💡 IPI Akademija nudi sljedeće obrazovne programe i kurseve:</p>
+
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+                    <div style="background-color: #f8fafc; padding: 14px 18px; border-radius: 6px; border-left: 4px solid #1a3a7c;">
+                        <strong>Osnove računarstva:</strong> Uvod u rad na računaru, MS Office paket, Internet sigurnost.
+                    </div>
+                    <div style="background-color: #f8fafc; padding: 14px 18px; border-radius: 6px; border-left: 4px solid #1a3a7c;">
+                        <strong>Web razvoj:</strong> HTML5, CSS3, JavaScript osnove, Napredni web dizajn.
+                    </div>
+                    <div style="background-color: #f8fafc; padding: 14px 18px; border-radius: 6px; border-left: 4px solid #1a3a7c;">
+                        <strong>Sistemska administracija:</strong> Uvod u Linux, Održavanje mrežnih sistema.
+                    </div>
+                    <div style="background-color: #f8fafc; padding: 14px 18px; border-radius: 6px; border-left: 4px solid #1a3a7c;">
+                        <strong>Baze podataka:</strong> SQL osnove i upravljanje relacionim bazama podataka.
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            <p>&copy; Internacionalna poslovno-informaciona akademija Tuzla</p>
+        </footer>
+    </div>
+
+    </div> <!-- /.layout-body -->
+
+    <script src="javascript.js"></script>
+</body>
+</html>
